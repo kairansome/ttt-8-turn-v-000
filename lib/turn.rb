@@ -33,6 +33,7 @@ def turn(board)
   index = user_input.to_i - 1
   if valid_move?(board, index)
     move(board, index, char = "X")
+    display_board
   else
   turn(board)
   end
